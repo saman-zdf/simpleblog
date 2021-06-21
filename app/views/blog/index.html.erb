@@ -1,0 +1,7 @@
+<h1>This is the index page</h1>
+<% @blog.each do |blog| %>
+  <%= link_to blog.name, blog_path(blog) %>
+  <%= blog.date %>
+  <%= blog.description %>
+<% end %>
+
